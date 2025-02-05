@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ff0c279f499eb88e2c6eb661c0c1e05d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ff0c279f499eb88e2c6eb661c0c1e05d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ff0c279f499eb88e2c6eb661c0c1e05d = L.map(
+                "map_ff0c279f499eb88e2c6eb661c0c1e05d",
+                {
+                    center: [37.54458808, 126.99399100000001],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_366c0b4c15dae2ceff3231e10452ba73 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_366c0b4c15dae2ceff3231e10452ba73.addTo(map_ff0c279f499eb88e2c6eb661c0c1e05d);
+        
+    
+            var marker_cluster_12416c36731778ee4e42a59d2d216ced = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_9da1b0c5bf0dc7e6e113c0ab448f9ded = L.marker(
+                [37.5495886, 127.081578],
+                {
+}
+            ).addTo(marker_cluster_12416c36731778ee4e42a59d2d216ced);
+        
+    
+            var icon_462372d51c540363243e3182c6e8cb9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "dog",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9da1b0c5bf0dc7e6e113c0ab448f9ded.setIcon(icon_462372d51c540363243e3182c6e8cb9a);
+        
+    
+        var popup_7d5038d4713855590be71b839a8e7da8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98d136f7aac7717741569768072ad841 = $(`<div id="html_98d136f7aac7717741569768072ad841" style="width: 100.0%; height: 100.0%;">어린이대공원</div>`)[0];
+                popup_7d5038d4713855590be71b839a8e7da8.setContent(html_98d136f7aac7717741569768072ad841);
+            
+        
+
+        marker_9da1b0c5bf0dc7e6e113c0ab448f9ded.bindPopup(popup_7d5038d4713855590be71b839a8e7da8)
+        ;
+
+        
+    
+    
+            var marker_34ab82bcbac22b3e6a7de67038e6bd44 = L.marker(
+                [37.5632716, 126.8926785],
+                {
+}
+            ).addTo(marker_cluster_12416c36731778ee4e42a59d2d216ced);
+        
+    
+            var icon_f65eb17badbdc5eeac09f35a64e1c745 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "dog",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_34ab82bcbac22b3e6a7de67038e6bd44.setIcon(icon_f65eb17badbdc5eeac09f35a64e1c745);
+        
+    
+        var popup_3c8ddc118e5e4f0ea7c3b2b064771b5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82c64e023c5ac9d12e69848765417ffc = $(`<div id="html_82c64e023c5ac9d12e69848765417ffc" style="width: 100.0%; height: 100.0%;">월드컵공원</div>`)[0];
+                popup_3c8ddc118e5e4f0ea7c3b2b064771b5d.setContent(html_82c64e023c5ac9d12e69848765417ffc);
+            
+        
+
+        marker_34ab82bcbac22b3e6a7de67038e6bd44.bindPopup(popup_3c8ddc118e5e4f0ea7c3b2b064771b5d)
+        ;
+
+        
+    
+    
+            var marker_b121d2e690ff21e505bf1c695143bea3 = L.marker(
+                [37.4926778, 126.919139],
+                {
+}
+            ).addTo(marker_cluster_12416c36731778ee4e42a59d2d216ced);
+        
+    
+            var icon_0d00fe4e99c1599b0e5f7a0f9f9dab6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "dog",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b121d2e690ff21e505bf1c695143bea3.setIcon(icon_0d00fe4e99c1599b0e5f7a0f9f9dab6a);
+        
+    
+        var popup_8867a99871bb932bdd2e4defaa93abdf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ed051d052c8dd1fa921c7f9bd27122f = $(`<div id="html_6ed051d052c8dd1fa921c7f9bd27122f" style="width: 100.0%; height: 100.0%;">보라매공원</div>`)[0];
+                popup_8867a99871bb932bdd2e4defaa93abdf.setContent(html_6ed051d052c8dd1fa921c7f9bd27122f);
+            
+        
+
+        marker_b121d2e690ff21e505bf1c695143bea3.bindPopup(popup_8867a99871bb932bdd2e4defaa93abdf)
+        ;
+
+        
+    
+    
+            var marker_2463a61544bb4044e5bf8a800e3183af = L.marker(
+                [37.4710677, 127.035758],
+                {
+}
+            ).addTo(marker_cluster_12416c36731778ee4e42a59d2d216ced);
+        
+    
+            var icon_ec7043145a4874933adcc69a176c294f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "dog",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2463a61544bb4044e5bf8a800e3183af.setIcon(icon_ec7043145a4874933adcc69a176c294f);
+        
+    
+        var popup_bf83b4b21406095a3454b39f1840a405 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71c73dfae66d127d1e4d5f6f2f78251f = $(`<div id="html_71c73dfae66d127d1e4d5f6f2f78251f" style="width: 100.0%; height: 100.0%;">매헌시민의 숲</div>`)[0];
+                popup_bf83b4b21406095a3454b39f1840a405.setContent(html_71c73dfae66d127d1e4d5f6f2f78251f);
+            
+        
+
+        marker_2463a61544bb4044e5bf8a800e3183af.bindPopup(popup_bf83b4b21406095a3454b39f1840a405)
+        ;
+
+        
+    
+    
+            var marker_c1708ad8da503babac1f9f92aa1d5850 = L.marker(
+                [37.6463347, 127.0408015],
+                {
+}
+            ).addTo(marker_cluster_12416c36731778ee4e42a59d2d216ced);
+        
+    
+            var icon_a9cd355a36c2ccfcfcdf126a4a7ad5ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "dog",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c1708ad8da503babac1f9f92aa1d5850.setIcon(icon_a9cd355a36c2ccfcfcdf126a4a7ad5ed);
+        
+    
+        var popup_24f5ce274f812b7d993fcafc9529a73f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_402576fe169811ff7c24fb8b6437d160 = $(`<div id="html_402576fe169811ff7c24fb8b6437d160" style="width: 100.0%; height: 100.0%;">초안산근린공원</div>`)[0];
+                popup_24f5ce274f812b7d993fcafc9529a73f.setContent(html_402576fe169811ff7c24fb8b6437d160);
+            
+        
+
+        marker_c1708ad8da503babac1f9f92aa1d5850.bindPopup(popup_24f5ce274f812b7d993fcafc9529a73f)
+        ;
+
+        
+    
+    
+            marker_cluster_12416c36731778ee4e42a59d2d216ced.addTo(map_ff0c279f499eb88e2c6eb661c0c1e05d);
+        
+</script>
+</html>
